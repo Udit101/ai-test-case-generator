@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Test Case Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Test Case Generator ✨</h1>
+        <p>Paste your code below and let AI generate test cases for you.</p>
+
+        <div class="input-section">
+            <label for="codeInput">Enter your code:</label>
+            <textarea id="codeInput" rows="15" placeholder="e.g., function sum(a, b) { return a + b; }"></textarea>
+
+            <label for="languageInput">Code Language (optional, helps AI):</label>
+            <input type="text" id="languageInput" placeholder="e.g., javascript, python, java">
+
+            <button id="generateButton">Generate Test Cases</button>
+        </div>
+
+        <div id="status" class="status-message" aria-live="polite"></div>
+
+        <div class="output-section">
+            <h2>Generated Test Cases:</h2>
+            <pre><code id="output">Waiting for input...</code></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

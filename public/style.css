@@ -1,0 +1,117 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    font-family: monospace; /* Good for code */
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block; /* Make button take full width */
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.input-section, .output-section {
+    margin-bottom: 30px;
+}
+
+#output {
+    display: block; /* Make pre/code block-level */
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word; /* Break long words */
+    font-family: monospace;
+    min-height: 100px; /* Minimum height before input */
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.status-message {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    display: none; /* Hidden by default */
+}
+
+.status-loading {
+    background-color: #eaf2f8;
+    color: #3498db;
+    border: 1px solid #aed6f1;
+    display: block;
+}
+
+.status-error {
+    background-color: #fdedec;
+    color: #c0392b;
+    border: 1px solid #fadbd8;
+    display: block;
+}
+
+ .status-success {
+    background-color: #eafaf1;
+    color: #27ae60;
+    border: 1px solid #abebc6;
+    display: block;
+}
