@@ -77,22 +77,6 @@ Before you begin, ensure you have met the following requirements:
 4.  Wait for the AI to process the request (you'll see a loading indicator).
 5.  The generated test cases will appear in the "Generated Test Cases" section below. Error messages will be displayed if something goes wrong.
 
-## Project Structure
-
-code-test-generator/
-├── public/ # Frontend files served statically
-│ ├── index.html # Main HTML structure
-│ ├── style.css # CSS styles
-│ └── script.js # Frontend JavaScript logic
-├── node_modules/ # Project dependencies (ignored by Git)
-├── .env # Environment variables (API key - ignored by Git)
-├── .gitignore # Specifies intentionally untracked files for Git
-├── package.json # Project metadata and dependencies
-├── package-lock.json # Records exact dependency versions
-├── README.md # This file
-└── server.js # Backend Node.js/Express server logic
-
-
 ## Security Note 🔒
 
 *   Your `GOOGLE_API_KEY` is sensitive. Keep it secret!
